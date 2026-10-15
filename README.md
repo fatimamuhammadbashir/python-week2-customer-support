@@ -1,2 +1,1 @@
-# python-week2-customer-support
-Python Customer Support Request System for Week 2 AI Engineering
+Python Customer Support Request System  Project Overview  This project is a Python-based customer support request system. It helps users create, manage, search, and sort customer support requests.  Learning Objectives  - Practice Python data structures. - Use lists, dictionaries, stacks, and queues. - Implement searching and sorting. - Understand time and space complexity. - Write automated tests.  Planned Features  - Add a customer support request. - View all requests. - Search for a request. - Sort requests by priority. - Test the program automatically.  Technologies  - Python 3 - pytest  Project Status  In development as part of Week 2 of the AI Engineering curriculum.
