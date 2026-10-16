@@ -1,52 +1,56 @@
-Python Customer Support Request System
+# Python Customer Support Request System
 
-1. Project Overview
+## Project Overview
+This project is a Python-based customer support request system. It allows users to add, view, search, and sort customer support requests.
 
-This project is a Python-based customer support request system. It allows users to add, view, search, and sort support requests.
-
-2. Features
-
+## Features
 - Add customer support requests.
-- View all requests.
-- Search requests by ID.
+- View all support requests.
+- Search for requests by ID.
 - Sort requests by priority.
+- Process requests using a queue (FIFO).
+- Track recent actions using a stack (LIFO).
 - Automated tests using pytest.
+- Automated testing with GitHub Actions.
 
-3. Data Structures
+## Data Structures
 
-Data Structure| Purpose
-List| Stores support requests
-Dictionary| Stores each request's details
-Queue| Planned for processing requests in order
-Stack| Planned for tracking recent actions
+| Data Structure | Purpose |
+|---|---|
+| List | Stores support requests |
+| Dictionary | Stores each request's details |
+| Queue | Processes requests in first-in, first-out order |
+| Stack | Tracks actions in last-in, first-out order |
 
-4. Searching and Sorting
+## Searching and Sorting
 
-- Searching: The program uses linear search to find a request by ID. Its time complexity is O(n).
-- Sorting: The program sorts requests by priority using Python's built-in sorting. Its typical time complexity is O(n log n).
+- Searching: Linear search by request ID, with time complexity O(n).
+- Sorting: Sorts requests by priority, typically O(n log n).
 
-5. Testing
+## Queue and Stack
 
-Automated tests are written using pytest to check adding, searching, and sorting requests.
+- Queue: `process_next_request()` processes the earliest queued request.
+- Stack: `get_last_action()` returns and removes the most recent action.
 
-6. Limitations
+## Testing
+Automated tests use pytest to check adding, searching, sorting, queue processing, and stack actions.
 
+GitHub Actions automatically runs the tests when changes are pushed to the main branch or a pull request targets main.
+
+## Limitations
 - Requests are stored in memory and are lost when the program stops.
 - The program currently runs in the terminal.
-- Queue and stack features still need to be implemented.
+- Request updates and deletion are not yet implemented.
 
-7. Future Improvements
-
-- Implement queue and stack operations.
+## Future Improvements
 - Save requests to a file or database.
 - Add request updates and deletion.
 - Build a graphical user interface.
 
-8. Technologies
-
-- Python 3
+## Technologies
+- Python 3.11
 - pytest
+- GitHub Actions
 
-9. Project Status
-
-Week 2 AI Engineering learning project — in development.
+## Project Status
+Week 2 AI Engineering learning project.
